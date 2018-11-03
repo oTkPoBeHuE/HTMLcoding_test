@@ -1,0 +1,8 @@
+@mixin fаrame-сontent {
+    @include flex-center();
+    .body-container {
+      width: 1440px;
+      height: 830px;
+      //border: 1px solid red;
+    }
+}

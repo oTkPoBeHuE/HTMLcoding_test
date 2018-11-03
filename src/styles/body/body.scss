@@ -1,0 +1,42 @@
+// main: ../../main.scss
+//-------------------------------
+
+body {
+  // Uncomment if you want to compare with a picture template.
+  //@include fаrame-сontent();
+  .body-container {
+    @include flex-row();
+
+    .content-container {
+      flex: 10 3 1190px;
+    }
+  }
+
+  aside {
+    background-color: #eff3f6;
+    flex: 1 1 250px;
+  }
+
+  main {
+    background-color: blue;
+    padding: 30px;
+  }
+
+  header {
+    padding: 20px 30px;
+  }
+}
+//--------------------------------
+
+body {
+  .body-container {
+    .content-container {}
+  }
+
+  aside {}
+
+  main {}
+
+  header {}
+}
+//--------------------------------

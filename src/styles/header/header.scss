@@ -1,0 +1,8 @@
+// main: ../../main.scss
+
+.header {
+    @include flex-row-space-between();
+    align-items: center;
+    //height: 100px;
+    background-color: yellow;
+}
