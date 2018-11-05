@@ -1,0 +1,35 @@
+// main: ../../main.scss
+@mixin sidebar-header__render-arrow-icon {
+  background-image: url("./../assets/sidebar/arrows-16px-2_small-left.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.sidebar-header {
+  @include flex-row-space-between;
+  align-items: center;
+  height: 100%;
+}
+
+.sidebar-header__title {
+  color: #222222;
+  font-family: "BerlinaX";
+  font-size: 24px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1.2px;
+}
+
+.sidebar-header__colored {
+  color: #e73261;
+  letter-spacing: 1.2px;
+}
+
+.sidebar-header__button {
+  @include reset_button_styles;
+  width: 30px;
+  height: 30px;
+  border-radius: 3px;
+  background-color: #222222;
+  @include sidebar-header__render-arrow-icon;
+}

@@ -1,0 +1,40 @@
+// main: ../../main.scss
+
+.sidebar__horizontal-line {
+  background-color: #e4e8eb;
+}
+
+.sidebar {
+  @include flex-column;
+  height: 100%;
+}
+
+.sidebar__header {
+@include flex-center;
+padding-top: 5px;
+  flex: 1 1 66px;
+}
+
+.sidebar__navigation {
+  flex: 100 100 600px;
+}
+
+.sidebar__footer {
+  padding-left: 30px;
+  flex: 1 1 68px;
+}
+
+.sidebar__inner-wrapper {
+  @include flex-column;
+  padding-left: 30px;
+  //padding-left: 400px;
+  //height: 94%;
+}
+
+.sidebar__header-wrapper{
+    @include flex-column-center-center;
+    align-items: stretch;
+    height: 100%;
+    flex-basis: 78%;
+    padding-left: 3px;
+}

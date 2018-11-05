@@ -1,4 +1,4 @@
-// main: ./video-tutorials.scss
+// main: ../../main.scss
 
 .video-tutorial-element {
   @include flex-row-space-between(); //align-items: baseline;
@@ -12,7 +12,7 @@
 
   .video-tutorial-element__logo-container{
     @include flex-center();
-    flex: 1 1 100px;
+    flex: 1 1 105px;
   }
 
   .video-tutorial-element__information{
@@ -22,7 +22,7 @@
 
   .video-tutorial-element__button-wrapper{
     @include flex-center();
-      flex: 1 1 150px;
+      flex: 1 1 200px;
   }
 
   .video-tutorial-element__button {

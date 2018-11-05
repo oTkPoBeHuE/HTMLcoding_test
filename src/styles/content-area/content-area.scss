@@ -2,19 +2,20 @@
 
 .content-area {
   height: 100%;
-  .content-area__title{
-    @include reset_text_styles();
-    opacity: 0.7;
-    color: #7495ad;
-    font-family: Arimo;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 48px;
-    letter-spacing: 0.4px;
-      color: green;
-  }
-  .content-area__content {
-    height: 100%;
-  }
 
+}
+
+.content-area__title{
+  @include reset_text_styles();
+  opacity: 0.7;
+  color: #7495ad;
+  font-family: Arimo;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 48px;
+  letter-spacing: 0.4px;
+    color: green;
+}
+.content-area__content {
+  //height: 100%;
 }

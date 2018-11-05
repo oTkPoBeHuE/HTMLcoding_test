@@ -2,52 +2,63 @@
 
 .update {
   @include flex-row;
-
-  .update__description {
-    @include reset_text_styles;
-    flex: 7 7 454;
-    //---------------------------------
-    color: #919ba2;
-    font-family: Arimo;
-    font-size: 12px;
-    font-weight: 400;
-    //line-height: 18px;
-    letter-spacing: 0.12px;
-    //---------------------------------
-  }
-
-  .update__description_wrapper {
-    padding: 20px 30px;
-    border: 1px solid #eff3f6;
-  }
-
-  .update__number_wrapper {
-    //@include flex-center;
-    position: relative;
-    text-align: center;
-    flex: 0 0 30px;
-  }
-
-  .update__img {
-    position: absolute;
-    top: 50%;
-    left: 100%;
-    transform: translate(-50%, -50%);
-  }
-
-  .update__number {
-    @include reset_text_styles;
-    //---------------------------------
-    position: absolute;
-    top: 50%;
-    left: 100%;
-    transform: translate(-50%, -50%);
-    //----------------------------------
-    color: #606060;
-    font-family: Arimo;
-    font-size: 12px;
-    font-weight: 700; //line-height: 18px;
-    letter-spacing: 0.6px;
-    //----------------------------------
-  }
 }
+
+.update__description {
+  @include reset_text_styles;
+  flex: 7 7 454;
+  //---------------------------------
+  color: #919ba2;
+  font-family: Arimo;
+  font-size: 12px;
+  font-weight: 400;
+  //line-height: 18px;
+  letter-spacing: 0.12px;
+  //---------------------------------
+}
+
+.update__description_wrapper {
+  padding: 20px 30px;
+  border: 1px solid #eff3f6;
+}
+
+.update__number_wrapper {
+  //@include flex-center;
+  position: relative;
+  text-align: center;
+  flex: 0 0 30px;
+}
+
+@mixin update__render-circle()  {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-image: url("../assets/updates/Ellipse_2_copy_4.png");
+}
+
+.update__number {
+  @include reset_text_styles;
+  @include flex-center;
+  @include update__render-circle;
+  width: 36px;
+  height: 36px;
+  //---------------------------------
+  position: absolute;
+  top: 50%;
+  left: 100%;
+  transform: translate(-50%, -50%);
+  //----------------------------------
+  color: #606060;
+  font-family: Arimo;
+  font-size: 12px;
+  font-weight: 700; //line-height: 18px;
+  letter-spacing: 0.6px;
+  //----------------------------------
+}
+
+//
+// .update__img {
+//   position: absolute;
+//   top: 50%;
+//   left: 100%;
+//   transform: translate(-50%, -50%);
+// }

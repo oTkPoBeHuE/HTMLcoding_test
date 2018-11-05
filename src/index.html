@@ -11,35 +11,103 @@
 
 <body>
   <div class="body-container">
-
     <aside class="body-container__aside">
       <div class="sidebar">
-        <header>
-          <h1>Remotr<h1>
-              <img />
+        <header class="sidebar__header">
+          <div class="sidebar__header-wrapper">
+            <div class="sidebar-header">
+              <h1 class="sidebar-header__title">Rem<span class="sidebar-header__colored">o</span>tr</h1>
+              <button class="sidebar-header__button"></button>
+            </div>
+          </div>
         </header>
-        <hr>
-        <nav>
-          <ul>
-            <li><a href="">Dashboard</a></li>
-          </ul>
-          <ul>
-            <h2>Manage</h2>
-            <li><a href="">Users</a></li>
-            <li><a href="">Devices</a></li>
-            <li><a href="">Roles</a></li>
-            <li><a href="">Role assigments</a></li>
-          </ul>
-          <ul>
-            <h2>Access</h2>
-            <li><a href="">My devices</a></li>
-          </ul>
+        <nav class="sidebar__navigation">
+          <hr class="sidebar__horizontal-line">
+          <div class="sidebar__inner-wrapper">
+            <div class="sidebar-nav">
+              <div class="sidebar-nav__section sidebar-nav__section_type_dashboard">
+                <div class="nav-section">
+                  <ul class="nav-section__list">
+                    <li class="nav-section__item nav-section__link_selected">
+                      <a class="nav-section__link" href="">
+                        <i class="nav-section__link-icon nav-section__link-icon__type_colored-dushboard"></i>
+                        <span class="nav-section__link-name">
+                          Dashboard
+                        </span>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="sidebar-nav__section sidebar-nav__section_type_manage">
+                <div class="nav-section">
+                  <h2 class="nav-section__title">Manage</h2>
+                  <ul class="nav-section__list">
+                    <li class="nav-section__item">
+                      <a class="nav-section__link" href="">
+                        <!-- <img class="nav-section__icon" src="../assets/sidebar/icons/users-16px_circle-09.png" alt=""> -->
+                        <i class="nav-section__link-icon nav-section__link-icon__type_users"></i>
+                        <span class="nav-section__link-name">
+                          Users
+                        </span>
+                      </a>
+                    </li>
+                    <li class="nav-section__item">
+                      <a class="nav-section__link" href="">
+                        <i class="nav-section__link-icon nav-section__link-icon__type_devices"></i>
+                        <span class="nav-section__link-name">
+                          Devices
+                        </span>
+                      </a>
+                    </li>
+                    <li class="nav-section__item">
+                      <a class="nav-section__link" href="">
+                        <i class="nav-section__link-icon nav-section__link-icon__type_roles"></i>
+                        <span class="nav-section__link-name">
+                          Roles
+                        </span>
+                      </a>
+                    </li>
+                    <li class="nav-section__item">
+                      <a class="nav-section__link" href="">
+                        <i class="nav-section__link-icon nav-section__link-icon__type_role-assigments"></i>
+                        <span class="nav-section__link-name">
+                          Role assigments
+                        </span>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="sidebar-nav__section sidebar-nav__section_type_access">
+                <div class="nav-section">
+                  <h2 class="nav-section__title">Access</h2>
+                  <ul class="nav-section__list">
+                    <li class="nav-section__item">
+                      <a class="nav-section__link" href="">
+                        <i class="nav-section__link-icon nav-section__link-icon nav-section__link-icon__type_devices"></i>
+                        <span class="nav-section__link-name">
+                          My devices
+                        </span>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <hr class="sidebar__horizontal-line">
         </nav>
-        <hr>
-        <footer>
-          <img />
-          <p>Daniel Cristea</p>
-          <img />
+        <footer class="sidebar__footer">
+          <div class="sidebar-footer">
+            <div class="sidebar-footer__img-wrapper">
+              <img class="sidebar-footer__img" src="../assets/device-preview/avatar.png" alt="User avatar">
+            </div>
+            <div class="sidebar-footer__name-wrapper">
+              <p class="sidebar-footer__name">Daniel Cristea</p>
+            </div>
+          </div>
         </footer>
       </div>
     </aside>
@@ -190,7 +258,6 @@
                   <li class="recent-updates__item">
                     <div class="update">
                       <div class="update__number_wrapper">
-                        <img class="update__img" src="../assets/updates/Ellipse_2_copy_4.png" alt="">
                         <h3 class="update__number">23</h3>
                       </div>
                       <div class="update__description_wrapper">
@@ -202,7 +269,6 @@
                   <li>
                     <div class="update">
                       <div class="update__number_wrapper">
-                        <img class="update__img" src="../assets/updates/Ellipse_2_copy_4.png" alt="">
                         <h3 class="update__number">18</h3>
                       </div>
                       <div class="update__description_wrapper">
@@ -213,7 +279,6 @@
                   <li>
                     <div class="update">
                       <div class="update__number_wrapper">
-                        <img class="update__img" src="../assets/updates/Ellipse_2_copy_4.png" alt="">
                         <h3 class="update__number">12</h3>
                       </div>
                       <div class="update__description_wrapper">
@@ -224,7 +289,6 @@
                   <li>
                     <div class="update">
                       <div class="update__number_wrapper">
-                        <img class="update__img" src="../assets/updates/Ellipse_2_copy_4.png" alt="">
                         <h3 class="update__number">10</h3>
                       </div>
                       <div class="update__description_wrapper">
@@ -235,7 +299,6 @@
                   <li>
                     <div class="update">
                       <div class="update__number_wrapper">
-                        <img class="update__img" src="../assets/updates/Ellipse_2_copy_4.png" alt="">
                         <h3 class="update__number">8</h3>
                       </div>
                       <div class="update__description_wrapper">

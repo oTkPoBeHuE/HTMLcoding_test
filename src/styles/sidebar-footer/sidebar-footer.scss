@@ -1,0 +1,49 @@
+// main: ../../main.scss
+@mixin sidebar-footer__render-arrow {
+  content: "\A";
+  width: 26px;
+  height: 26px;
+  display: inline-block;
+  background-image: url("../assets/sidebar/arrows-16px-3_small-down.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.sidebar-footer {
+  @include flex-row;
+  //justify-content: space-around;
+  align-items: center;
+}
+
+.sidebar-footer__name {
+  @include  cursor_pointer;
+  display: flex;
+  align-items: center;
+  //align-items: center;
+  &:after {
+    @include sidebar-footer__render-arrow;
+  }
+  //---------------------------
+  color: #222222;
+  font-family: Arimo;
+  font-size: 14px;
+  font-weight: 400;
+  //line-height: 18px;
+  letter-spacing: 0.35px;
+  //---------------------------
+}
+
+.sidebar-footer__img {
+  width: 39px;
+  height: 39px;
+}
+
+.sidebar-footer__img-wrapper {
+  @include flex-center;
+  flex: 1 1 20%;
+}
+
+.sidebar-footer__name-wrapper {
+  padding-left: 15px;
+  flex: 4 4 80%;
+}

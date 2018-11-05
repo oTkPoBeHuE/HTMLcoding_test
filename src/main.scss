@@ -1,9 +1,12 @@
 //
+
+@import "./fonts.scss";
+
 @import "./styles/utils/flex_mixins.scss";
 @import "./styles/utils/utils.scss";
 @import "./styles/utils/development.scss";
 
-@import "./styles/body/body.scss";
+@import "./styles/body-container/body-container.scss";
 
 @import "./styles/content-area/content-area.scss";
 @import "./styles/recent-updates/recent-updates.scss";
@@ -13,3 +16,11 @@
 @import "./styles/quick-access/quick-access.scss";
 @import "./styles/device-preview/device-preview.scss";
 @import "./styles/update/update.scss";
+@import "./styles/sidebar/sidebar.scss";
+
+
+@import "./styles/sidebar-header/sidebar-header.scss";
+@import "./styles/sidebar-footer/sidebar-footer.scss";
+@import "./styles/nav-section/nav-section.scss";
+@import "./styles/sidebar-nav/sidebar-nav.scss";
+@import "./styles/video-tutorial-element/video-tutorial-element.scss";

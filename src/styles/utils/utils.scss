@@ -1,5 +1,10 @@
 // main: ../../main.scss
+@mixin cursor_pointer() {
+  cursor: pointer;
+}
+
 @mixin reset_button_styles() {
+  @include  cursor_pointer;
   outline: none;
   background: none;
   border: none;
@@ -25,4 +30,9 @@
   font-style: normal;
   margin: 0;
   padding: 0;
+}
+
+
+@mixin cursor_pointer() {
+  cursor: pointer;
 }
