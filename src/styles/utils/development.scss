@@ -1,0 +1,64 @@
+@mixin fаrame-сontent {
+  @include flex-center();
+
+  .body-container {
+    max-width: 1440px;
+    height: 830px;
+    //border: 1px solid red;
+  }
+}
+@mixin painted {
+  // Uncomment if you want to compare with a picture template.
+  //@include fаrame-сontent();
+  .body-container {
+    background-color: black;
+
+    .body-container__wrapper {
+      background-color: green;
+    }
+    //
+    // .body-container__inner-wrapper{
+    //   background-color: black;
+    // }
+  }
+
+  .body-container__aside {
+    background-color: #eff3f6;
+  }
+
+  .body-container__main {
+    background-color: blue;
+
+    .device-preview {
+      border: 3px solid red;
+    }
+  }
+
+  .body-container__header {
+    background-color: yellow;
+
+    .search-bar {
+      background: red;
+    }
+  }
+
+  .video-tutorials {
+    background-color: #00FF7F;
+
+    .video-tutorial-element {
+      background-color: #EEE8AA;
+    }
+  }
+
+  .update {
+    background-color: white;
+  }
+
+  .recent-updates {
+    background-color: #F0AA7F;
+  }
+
+  .video-tutorials__item {
+    background-color: lightgrey;
+  }
+}

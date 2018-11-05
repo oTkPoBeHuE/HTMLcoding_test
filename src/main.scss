@@ -1,9 +1,15 @@
 //
+@import "./styles/utils/flex_mixins.scss";
 @import "./styles/utils/utils.scss";
-@import "./styles/utils/test.scss";
+@import "./styles/utils/development.scss";
 
 @import "./styles/body/body.scss";
 
-@import "./styles/header/header.scss";
+@import "./styles/content-area/content-area.scss";
+@import "./styles/recent-updates/recent-updates.scss";
+@import "./styles/video-tutorials/video-tutorials.scss";
 @import "./styles/purchase-block/purchase-block.scss";
 @import "./styles/search-bar/search-bar.scss";
+@import "./styles/quick-access/quick-access.scss";
+@import "./styles/device-preview/device-preview.scss";
+@import "./styles/update/update.scss";

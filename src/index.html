@@ -4,45 +4,251 @@
 <head>
   <meta charset="UTF-8">
   <title>Remotr</title>
+  <link href="https://fonts.googleapis.com/css?family=Arimo" rel="stylesheet">
+  <link rel="stylesheet" href="normalize.css">
   <link rel="stylesheet" href="main.css">
 </head>
 
 <body>
   <div class="body-container">
 
-    <aside>
-      <header>
-      </header>
-      <footer>
-      </footer>
+    <aside class="body-container__aside">
+      <div class="sidebar">
+        <header>
+          <h1>Remotr<h1>
+              <img />
+        </header>
+        <hr>
+        <nav>
+          <ul>
+            <li><a href="">Dashboard</a></li>
+          </ul>
+          <ul>
+            <h2>Manage</h2>
+            <li><a href="">Users</a></li>
+            <li><a href="">Devices</a></li>
+            <li><a href="">Roles</a></li>
+            <li><a href="">Role assigments</a></li>
+          </ul>
+          <ul>
+            <h2>Access</h2>
+            <li><a href="">My devices</a></li>
+          </ul>
+        </nav>
+        <hr>
+        <footer>
+          <img />
+          <p>Daniel Cristea</p>
+          <img />
+        </footer>
+      </div>
     </aside>
 
-    <div class="content-container">
+    <div class="body-container__wrapper">
+      <!-- <div class="body-container__inner-wrapper"> -->
 
-      <header class="header">
-        <form class="search-bar">
-          <label>
-            <img class="search-bar__icon" src="../assets/ui-16px-1_zoom.png" alt="Magnifier icon">
-            <input class="search-bar__input" type="search" name="search-bar" id="search-bar" placeholder="Type here for smart search" maxlength="200" />
-          </label>
-        </form>
-        <form class="purchase-block">
-          <button class="purchase-block__button" type="submit">purchase</button>
-        </form>
+      <header class="body-container__header">
+        <div class="body-container__header-wrapper">
+          <form class="search-bar">
+            <label>
+              <img class="search-bar__icon" src="../assets/ui-16px-1_zoom.png" alt="Magnifier icon">
+              <input class="search-bar__input" type="search" name="search-bar" id="search-bar" placeholder="Type here for smart search" maxlength="200" />
+            </label>
+          </form>
+          <form class="purchase-block">
+            <button class="purchase-block__button" type="submit">purchase</button>
+          </form>
+        </div>
       </header>
 
-      <main>
-        <article>
-          123
-        </article>
-        <article>
-          345
-        </article>
-        <article>
-          qeqweqweqweqwe
-        </article>
-      </main>
+      <main class="body-container__main">
+        <section class="body-container__quick-access-section">
+          <div class="content-area">
+            <h2 class='content-area__title'>Quick access</h2>
+            <div class='content-area__content'>
+              <div class='quick-access'>
+                <ul class='quick-access__list'>
+                  <li class='quick-access__item'>
+                    <div class='device-preview device-preview_status_green'>
+                      <img class="device-preview__img" src="../assets/device-preview/desktop_images/Layer_2.png" alt="Desktop">
+                      <div class="device-preview__wrapper">
+                        <div class="device-preview__information">
+                          <h3 class="device-preview__name">Home</h3>
+                          <p class="device-preview__id">NetopTKH-3421</p>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class='quick-access__item'>
+                    <div class='device-preview device-preview_status_green'>
+                      <img class="device-preview__img" src="../assets/device-preview/desktop_images/Layer_3.png" alt="Desktop">
+                      <div class="device-preview__wrapper">
+                        <div class="device-preview__information">
+                          <h3 class="device-preview__name">iMac Work</h3>
+                          <p class="device-preview__id">NetopWKX-9327</p>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class='quick-access__item'>
+                    <div class='device-preview device-preview_status_yellow'>
+                      <img class="device-preview__img" src="../assets/device-preview/desktop_images/Layer_4.png" alt="Desktop">
+                      <div class="device-preview__wrapper">
+                        <div class="device-preview__information">
+                          <h3 class="device-preview__name">iMac Office</h3>
+                          <p class="device-preview__id">NetopOTK-5151</p>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class='quick-access__item'>
+                    <div class='device-preview device-preview_status_red'>
+                      <img class="device-preview__img" src="../assets/device-preview/desktop_images/Layer_5.png" alt="Desktop">
+                      <div class="device-preview__wrapper">
+                        <div class="device-preview__information">
+                          <h3 class="device-preview__name">My iPhone</h3>
+                          <p class="device-preview__id">NetopPTK-1231</p>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
 
+
+
+        <section class="body-container__video-tutorials-section">
+          <div class="content-area">
+            <h2 class='content-area__title'>Video tutorials</h2>
+            <div class='content-area__content'>
+              <div class="video-tutorials">
+                <ul class="video-tutorials__list">
+                  <li class="video-tutorials__item">
+                    <div class="video-tutorial-element">
+                      <div class="video-tutorial-element__logo-container">
+                        <div class="video-tutorial-element__logo">
+                          <img class="video-tutorial-element__img" src="../assets/video-tutorials/users-color_woman-add.png" alt="">
+                        </div>
+                      </div>
+                      <div class="video-tutorial-element__information">
+                        <h3 class="video-tutorial-element__title">Add user</h3>
+                        <p class="video-tutorial-element__desctiption">Learn how to add users</p>
+                      </div>
+                      <div class="video-tutorial-element__button-wrapper">
+                        <button class="video-tutorial-element__button">play video</button>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="video-tutorials__item">
+                    <div class="video-tutorial-element">
+                      <div class="video-tutorial-element__logo-container">
+                        <div class="video-tutorial-element__logo">
+                          <img class="video-tutorial-element__img" src="../assets/video-tutorials/pc.png" alt="">
+                        </div>
+                      </div>
+                      <div class="video-tutorial-element__information">
+                        <h3 class="video-tutorial-element__title">Add devices</h3>
+                        <p class="video-tutorial-element__desctiption">A brief video on adding devices</p>
+                      </div>
+                      <div class="video-tutorial-element__button-wrapper">
+                        <button class="video-tutorial-element__button">play video</button>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="video-tutorials__item">
+                    <div class="video-tutorial-element">
+                      <div class="video-tutorial-element__logo-container">
+                        <div class="video-tutorial-element__logo">
+                          <img class="video-tutorial-element__img" src="../assets/video-tutorials/business-color_hierarchy-56.png" alt="">
+                        </div>
+                      </div>
+                      <div class="video-tutorial-element__information">
+                        <h3 class="video-tutorial-element__title">Roles and role assignments</h3>
+                        <p class="video-tutorial-element__desctiption">Using roles and creating role
+                          assignments in Netop Portal</p>
+                      </div>
+                      <div class="video-tutorial-element__button-wrapper">
+                        <button class="video-tutorial-element__button">play video</button>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="body-container__recent-updates-section">
+          <div class="content-area">
+            <h2 class='content-area__title'>Recent updates</h2>
+            <div class='content-area__content'>
+              <div class="recent-updates">
+                <ul class="recent-updates__list">
+                  <li class="recent-updates__item">
+                    <div class="update">
+                      <div class="update__number_wrapper">
+                        <img class="update__img" src="../assets/updates/Ellipse_2_copy_4.png" alt="">
+                        <h3 class="update__number">23</h3>
+                      </div>
+                      <div class="update__description_wrapper">
+                        <p class="update__description">Permissions associated with Roles have been updated to better align with their descriptions. Specific permissions were added or removed as needed for each Role to ensure the total set of
+                          permissions corresponds to the description of the Role</p>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="update">
+                      <div class="update__number_wrapper">
+                        <img class="update__img" src="../assets/updates/Ellipse_2_copy_4.png" alt="">
+                        <h3 class="update__number">18</h3>
+                      </div>
+                      <div class="update__description_wrapper">
+                        <p class="update__description">A notification bar has been added to the Portal to alert users of important information and announcements</p>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="update">
+                      <div class="update__number_wrapper">
+                        <img class="update__img" src="../assets/updates/Ellipse_2_copy_4.png" alt="">
+                        <h3 class="update__number">12</h3>
+                      </div>
+                      <div class="update__description_wrapper">
+                        <p class="update__description">Email validation is now available from the user profile screen. Email validation provides a recovery email address that can be used in case of a forgotten password</p>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="update">
+                      <div class="update__number_wrapper">
+                        <img class="update__img" src="../assets/updates/Ellipse_2_copy_4.png" alt="">
+                        <h3 class="update__number">10</h3>
+                      </div>
+                      <div class="update__description_wrapper">
+                        <p class="update__description">A Recent Updates panel was added to the Portal Dashboard screen to provide information on changes made to Netop Remote Control and the Netop Portal</p>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="update">
+                      <div class="update__number_wrapper">
+                        <img class="update__img" src="../assets/updates/Ellipse_2_copy_4.png" alt="">
+                        <h3 class="update__number">8</h3>
+                      </div>
+                      <div class="update__description_wrapper">
+                        <p class="update__description">The username field on the login screen is no longer case sensitive</p>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
     </div>
 
   </div>

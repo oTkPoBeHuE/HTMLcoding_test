@@ -1,0 +1,21 @@
+// main: ../../main.scss
+
+@import "./_video-tutorial-element.scss";
+
+.video-tutorials {
+  height: 100%;
+  .video-tutorials__list{
+      @include reset_unordered_lists_styles;
+      @include flex-column-space-between;
+      height: 100%;
+      padding: 10px;
+  }
+
+  .video-tutorials__item{
+    flex: 0 0 104px;
+    @include flex-column-center-center;
+    align-items: stretch;
+    //width: 90%;
+    //padding: 10px;
+  }
+}

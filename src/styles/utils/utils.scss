@@ -1,46 +1,28 @@
 // main: ../../main.scss
-
-@mixin flex() {
-  display: flex;
+@mixin reset_button_styles() {
+  outline: none;
+  background: none;
+  border: none;
 }
+@mixin reset_input_styles() {
+  border: none;
+  background-image: none;
+  background-color: transparent;
+  box-shadow: none;
+  border: none;
 
-@mixin flex-direction($direction) {
-  @include flex();
-  flex-direction: $direction;
+  &:focus {
+    outline: none;
+  }
 }
-@mixin justify-content($justify) {
-  justify-content: $justify;
+@mixin reset_unordered_lists_styles() {
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
-@mixin align-items($align) {
-  align-items: $align;
-}
-
-
-@mixin flex-column() {
-  @include flex-direction(column);
-}
-
-@mixin flex-row() {
-  @include flex-direction(row);
-}
-
-@mixin flex-column-space-between() {
-  @include flex-column();
-  @include justify-content(space-between);
-}
-
-@mixin  flex-row-space-between() {
-  @include  flex-row();
-  @include justify-content(space-between);
-}
-
-
-@mixin  flex-row-center-center() {
-  @include  flex-row();
-  @include justify-content(center);
-  @include align-items(center);
-}
-
-@mixin  flex-center() {
-  @include  flex-row-center-center();
+@mixin reset_text_styles() {
+  font-weight: normal;
+  font-style: normal;
+  margin: 0;
+  padding: 0;
 }

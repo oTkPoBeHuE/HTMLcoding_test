@@ -2,28 +2,56 @@
 //-------------------------------
 
 body {
+  //------------------------------
   // Uncomment if you want to compare with a picture template.
-  //@include fаrame-сontent();
+  @include fаrame-сontent();
+  @include painted();
+  //------------------------------
+  @include flex-center();
+
   .body-container {
     @include flex-row();
-
-    .content-container {
-      flex: 10 3 1190px;
-    }
+    //max-width: 1700px;
+    flex-basis: 1700px;
   }
 
-  aside {
+  .body-container__wrapper {
+    @include flex-column();
+    flex: 10 3 1550px;
+  }
+
+  .body-container__aside {
     background-color: #eff3f6;
     flex: 1 1 250px;
+    min-width: 250px;
   }
 
-  main {
-    background-color: blue;
-    padding: 30px;
+  .body-container__main {
+    @include flex-row-space-between();
+    flex-wrap: wrap;
   }
 
-  header {
-    padding: 20px 30px;
+  .body-container__quick-access-section {
+    flex: 1 1 100%;
+  }
+
+  .body-container__video-tutorials-section {
+    flex: 1 50%;
+  }
+
+  .body-container__recent-updates-section {
+    flex: 1 1 50%;
+  }
+
+
+  .body-container__header {
+    height: 72px;
+    padding-top: 20px;
+  }
+
+  .body-container__header-wrapper {
+    @include flex-row-space-between();
+    align-items: baseline;
   }
 }
 //--------------------------------
@@ -33,10 +61,10 @@ body {
     .content-container {}
   }
 
-  aside {}
+  .body-container__aside {}
 
-  main {}
+  .body-container__main {}
 
-  header {}
+  .body-container__header {}
 }
 //--------------------------------

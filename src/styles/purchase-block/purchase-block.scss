@@ -2,6 +2,7 @@
 
 .purchase-block {
   .purchase-block__button {
+    @include reset_button_styles();
     width: 150px;
     height: 40px;
     border-radius: 3px;

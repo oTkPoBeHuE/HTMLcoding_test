@@ -1,35 +1,257 @@
-body .body-container {
+body {
   display: flex;
   flex-direction: row;
-}
-
-body .body-container .content-container {
-  flex: 10 3 1190px;
-}
-
-body aside {
-  background-color: #eff3f6;
-  flex: 1 1 250px;
-}
-
-body main {
-  background-color: blue;
-  padding: 30px;
-}
-
-body header {
-  padding: 20px 30px;
-}
-
-.header {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+body .body-container {
+  max-width: 1440px;
+  height: 830px;
+}
+
+body .body-container {
+  background-color: black;
+}
+
+body .body-container .body-container__wrapper {
+  background-color: green;
+}
+
+body .body-container__aside {
+  background-color: #eff3f6;
+}
+
+body .body-container__main {
+  background-color: blue;
+}
+
+body .body-container__main .device-preview {
+  border: 3px solid red;
+}
+
+body .body-container__header {
   background-color: yellow;
 }
 
+body .body-container__header .search-bar {
+  background: red;
+}
+
+body .video-tutorials {
+  background-color: #00FF7F;
+}
+
+body .video-tutorials .video-tutorial-element {
+  background-color: #EEE8AA;
+}
+
+body .update {
+  background-color: white;
+}
+
+body .recent-updates {
+  background-color: #F0AA7F;
+}
+
+body .video-tutorials__item {
+  background-color: lightgrey;
+}
+
+body .body-container {
+  display: flex;
+  flex-direction: row;
+  flex-basis: 1700px;
+}
+
+body .body-container__wrapper {
+  display: flex;
+  flex-direction: column;
+  flex: 10 3 1550px;
+}
+
+body .body-container__aside {
+  background-color: #eff3f6;
+  flex: 1 1 250px;
+  min-width: 250px;
+}
+
+body .body-container__main {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+body .body-container__quick-access-section {
+  flex: 1 1 100%;
+}
+
+body .body-container__video-tutorials-section {
+  flex: 1 50%;
+}
+
+body .body-container__recent-updates-section {
+  flex: 1 1 50%;
+}
+
+body .body-container__header {
+  height: 72px;
+  padding-top: 20px;
+}
+
+body .body-container__header-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.content-area {
+  height: 100%;
+}
+
+.content-area .content-area__title {
+  font-weight: normal;
+  font-style: normal;
+  margin: 0;
+  padding: 0;
+  opacity: 0.7;
+  color: #7495ad;
+  font-family: Arimo;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 48px;
+  letter-spacing: 0.4px;
+  color: green;
+}
+
+.content-area .content-area__content {
+  height: 100%;
+}
+
+.recent-updates .recent-updates__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.video-tutorial-element {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.video-tutorial-element .video-tutorial-element {
+  width: 38px;
+  height: 38px;
+}
+
+.video-tutorial-element .video-tutorial-element__logo-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex: 1 1 100px;
+}
+
+.video-tutorial-element .video-tutorial-element__information {
+  align-self: center;
+  flex: 10 10 400px;
+}
+
+.video-tutorial-element .video-tutorial-element__button-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex: 1 1 150px;
+}
+
+.video-tutorial-element .video-tutorial-element__button {
+  outline: none;
+  background: none;
+  border: none;
+  width: 150px;
+  height: 50px;
+  border-radius: 3px;
+  background-color: #606060;
+  color: #eff3f6;
+  font-family: Arimo;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 48px;
+  text-transform: uppercase;
+  letter-spacing: 1.95px;
+}
+
+.video-tutorial-element .video-tutorial-element__logo {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 64px;
+  height: 64px;
+  background-color: #eff3f6;
+  border-radius: 50%;
+}
+
+.video-tutorial-element .video-tutorial-element__title {
+  font-weight: normal;
+  font-style: normal;
+  margin: 0;
+  padding: 0;
+  color: #222222;
+  font-family: Arimo;
+  font-size: 18px;
+  font-weight: 400;
+  letter-spacing: 0.45px;
+}
+
+.video-tutorial-element .video-tutorial-element__desctiption {
+  font-weight: normal;
+  font-style: normal;
+  margin: 0;
+  padding: 0;
+  color: #919ba2;
+  font-family: Arimo;
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 0.35px;
+}
+
+.video-tutorials {
+  height: 100%;
+}
+
+.video-tutorials .video-tutorials__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  padding: 10px;
+}
+
+.video-tutorials .video-tutorials__item {
+  flex: 0 0 104px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-items: stretch;
+}
+
 .purchase-block .purchase-block__button {
+  outline: none;
+  background: none;
+  border: none;
   width: 150px;
   height: 40px;
   border-radius: 3px;
@@ -44,24 +266,201 @@ body header {
 }
 
 .search-bar {
-  background: red;
-  height: 17px;
+  height: 1.5em;
+  width: 60%;
 }
 
 .search-bar .search-bar__input {
   border: none;
-  width: 201px;
-  height: 17px;
+  background-image: none;
+  background-color: transparent;
+  box-shadow: none;
+  border: none;
+  width: 80%;
   color: #919ba2;
   font-family: Arimo;
-  font-size: 16px;
+  font-size: 1.15em;
   font-weight: 400;
   line-height: 18px;
   letter-spacing: 0.4px;
+}
+
+.search-bar .search-bar__input:focus {
+  outline: none;
 }
 
 .search-bar .search-bar__icon {
   width: 16px;
   height: 16px;
   margin-right: 10px;
+}
+
+.quick-access .quick-access__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.quick-access .quick-access__item {
+  margin: 10px;
+}
+
+.quick-access .quick-access__item:last-child {
+  margin-right: 0px;
+}
+
+.quick-access .quick-access__item:first-child {
+  margin-left: 0px;
+}
+
+.device-preview {
+  display: flex;
+  flex-direction: column;
+  width: 260px;
+  height: 200px;
+  box-shadow: 0 2px 5px rgba(106, 104, 104, 0.15);
+  border-radius: 3px;
+  background-color: #ffffff;
+}
+
+.device-preview .device-preview__img {
+  flex: 1 1 146px;
+}
+
+.device-preview .device-preview__wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex: 1 1 54px;
+}
+
+.device-preview .device-preview__information {
+  display: flex;
+  flex-direction: column;
+  width: 75%;
+}
+
+.device-preview .device-preview__name {
+  font-weight: normal;
+  font-style: normal;
+  margin: 0;
+  padding: 0;
+  color: #222222;
+  font-family: Arimo;
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 0.14px;
+}
+
+.device-preview .device-preview__id {
+  font-weight: normal;
+  font-style: normal;
+  margin: 0;
+  padding: 0;
+  color: #919ba2;
+  font-family: Arimo;
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: 0.12px;
+}
+
+.device-preview_status_green .device-preview__name:before {
+  content: "\A";
+  width: 0.4em;
+  height: 0.4em;
+  margin-bottom: 0.2em;
+  margin-right: 0.4em;
+  border-radius: 50%;
+  background-color: #88d54a;
+  display: inline-block;
+}
+
+.device-preview_status_yellow .device-preview__name:before {
+  content: "\A";
+  width: 0.4em;
+  height: 0.4em;
+  margin-bottom: 0.2em;
+  margin-right: 0.4em;
+  border-radius: 50%;
+  background-color: #ffd300;
+  display: inline-block;
+}
+
+.device-preview_status_red .device-preview__name:before {
+  content: "\A";
+  width: 0.4em;
+  height: 0.4em;
+  margin-bottom: 0.2em;
+  margin-right: 0.4em;
+  border-radius: 50%;
+  background-color: #ce3234;
+  display: inline-block;
+}
+
+.device-preview__wrapper:after {
+  content: "\A";
+  width: 26px;
+  height: 26px;
+  border-radius: 3px;
+  background-color: #606060;
+  display: inline-block;
+  background-image: url("./../assets/device-preview/ui-16px-1_eye-19.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.update {
+  display: flex;
+  flex-direction: row;
+}
+
+.update .update__description {
+  font-weight: normal;
+  font-style: normal;
+  margin: 0;
+  padding: 0;
+  flex: 7 7 454;
+  color: #919ba2;
+  font-family: Arimo;
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: 0.12px;
+}
+
+.update .update__description_wrapper {
+  padding: 20px 30px;
+  border: 1px solid #eff3f6;
+}
+
+.update .update__number_wrapper {
+  position: relative;
+  text-align: center;
+  flex: 0 0 30px;
+}
+
+.update .update__img {
+  position: absolute;
+  top: 50%;
+  left: 100%;
+  transform: translate(-50%, -50%);
+}
+
+.update .update__number {
+  font-weight: normal;
+  font-style: normal;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  top: 50%;
+  left: 100%;
+  transform: translate(-50%, -50%);
+  color: #606060;
+  font-family: Arimo;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.6px;
 }
