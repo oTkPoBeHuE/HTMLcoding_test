@@ -12,8 +12,15 @@
 }
 
 .nav-section__link_selected {
-  &:before {
-    @include nav-section__render-colored_arrow();
+  @media (min-width: 1424px) {
+    &:before {
+      @include nav-section__render-colored_arrow();
+    }
+  }
+  @media (max-width: 1423px) {
+    span {
+      color: red !important;
+    }
   }
 }
 
@@ -97,3 +104,5 @@
 .nav-section__link-icon__type_colored-dushboard {
   background-image: url("../assets/sidebar/icons/design-16px-2_layout-25.png");
 }
+@media (min-width: 1424px) {}
+@media (max-width: 1423px) {}

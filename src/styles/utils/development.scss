@@ -1,9 +1,10 @@
+// main: ../../main.scss
 @mixin fаrame-сontent {
   @include flex-center();
 
   .body-container {
     max-width: 1440px;
-    height: 830px;
+    min-height: 830px;
   }
 }
 @mixin painted {

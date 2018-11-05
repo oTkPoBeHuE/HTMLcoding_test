@@ -29,6 +29,7 @@
   @include justify-content(space-between);
 }
 
+
 @mixin flex-column-center {
   @include flex-column;
   @include justify-content(center);
@@ -39,6 +40,10 @@
   @include justify-content(space-between);
 }
 
+@mixin  flex-row-space-around {
+  @include  flex-row;
+  @include justify-content(space-around);
+}
 
 @mixin  flex-row-center-center {
   @include  flex-row;

@@ -8,3 +8,7 @@
   //------------------------------
   @include flex-center();
 }
+
+@media (max-width: 1423px) {
+  height: 100%;
+}

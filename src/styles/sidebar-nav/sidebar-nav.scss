@@ -1,5 +1,7 @@
 // main: ../../main.scss
+.sidebar-nav{
 
+}
 .sidebar-nav__section {
   margin-bottom: 25px;
 }
@@ -9,3 +11,9 @@
 .sidebar-nav__section_type_manage {}
 
 .sidebar-nav__section_type_access {}
+
+@media (max-width: 1423px) {
+  .sidebar-nav {
+    @include flex-row-space-around;
+  }
+}

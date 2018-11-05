@@ -6,9 +6,7 @@
 }
 
 .sidebar-header {
-  @include flex-row-space-between;
-  align-items: center;
-  height: 100%;
+
 }
 
 .sidebar-header__title {
@@ -32,4 +30,20 @@
   border-radius: 3px;
   background-color: #222222;
   @include sidebar-header__render-arrow-icon;
+}
+
+@media (min-width: 1424px) {
+  .sidebar-header {
+    @include flex-row-space-between;
+    align-items: center;
+    height: 100%;
+  }
+}
+@media (max-width: 1423px) {
+  .sidebar-header {
+    display: block;
+  }
+  .sidebar-header__button{
+    display: none;
+  }
 }
