@@ -5,3 +5,16 @@
 .recent-updates__list {
   @include reset_unordered_lists_styles;
 }
+
+
+//TODO: Fix it
+//-----------------------------------
+.recent-updates__list {
+  li:first-child {
+    .update__description_wrapper{
+      border-top: none !important;
+    }
+  }
+}
+
+//-----------------------------------

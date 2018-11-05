@@ -17,20 +17,23 @@
   font-family: Arimo;
   font-size: 12px;
   font-weight: 400;
-  //line-height: 18px;
+  line-height: 18px;
   letter-spacing: 0.12px;
   //---------------------------------
 }
 
 .update__description_wrapper {
-  padding: 20px 30px;
+  padding: 18px 30px;
+  padding-right: 20px;
+  padding-left: 33px;
+  flex-grow: 1;
   border: 1px solid #eff3f6;
 }
 
 .update__number_wrapper {
   position: relative;
   text-align: center;
-  flex: 0 0 30px;
+  flex: 0 0 35px;
 }
 
 .update__number {

@@ -51,12 +51,15 @@
 
 .body-container__video-tutorials-section {
   padding-top: 5px;
-  flex: 0 0 50%;
+  flex: 0 0 562px;
 }
 
 .body-container__recent-updates-section {
   padding-top: 5px;
-  flex: 0 0 48%;
+  flex: 0 0 550px;
+  box-shadow: 0 2px 5px rgba(106, 104, 104, 0.15);
+  border-radius: 3px;
+  background-color: #ffffff;
 }
 
 .body-container__header {
@@ -96,6 +99,10 @@
   margin: 0;
 }
 
+.recent-updates__list li:first-child .update__description_wrapper {
+  border-top: none !important;
+}
+
 .video-tutorials {
   height: 100%;
 }
@@ -117,6 +124,9 @@
   margin-top: 9px;
   margin-bottom: 30px;
   width: 98%;
+  box-shadow: 0 2px 5px rgba(106, 104, 104, 0.15);
+  border-radius: 3px;
+  background-color: #ffffff;
 }
 
 .video-tutorials__item:last-child {
@@ -404,18 +414,22 @@
   font-family: Arimo;
   font-size: 12px;
   font-weight: 400;
+  line-height: 18px;
   letter-spacing: 0.12px;
 }
 
 .update__description_wrapper {
-  padding: 20px 30px;
+  padding: 18px 30px;
+  padding-right: 20px;
+  padding-left: 33px;
+  flex-grow: 1;
   border: 1px solid #eff3f6;
 }
 
 .update__number_wrapper {
   position: relative;
   text-align: center;
-  flex: 0 0 30px;
+  flex: 0 0 35px;
 }
 
 .update__number {
@@ -444,7 +458,8 @@
 }
 
 .sidebar__horizontal-line {
-  background-color: #e4e8eb;
+  border-bottom: 1px solid #e4e8eb;
+  border-top: 1px solid white;
 }
 
 .sidebar {
@@ -464,6 +479,7 @@
 
 .sidebar__navigation {
   flex: 100 100 600px;
+  border: 1px solid #eff3f6;
 }
 
 .sidebar__footer {
@@ -475,6 +491,7 @@
   display: flex;
   flex-direction: column;
   padding-left: 30px;
+  height: 94%;
 }
 
 .sidebar__header-wrapper {
