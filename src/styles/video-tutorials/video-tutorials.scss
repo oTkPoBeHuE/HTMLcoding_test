@@ -2,31 +2,23 @@
 
 .video-tutorials {
   height: 100%;
+}
 
-  .video-tutorials__list {
-    @include reset_unordered_lists_styles;
-    //  @include flex-column-space-between;
-    height: 100%;
-    //padding: 10px;
-    // li:not(:last-child){
-    //   margin-bottom: 17px;
-    // }
-  }
+.video-tutorials__list {
+  @include reset_unordered_lists_styles;
+  height: 100%;
 
-  .video-tutorials__item {
-    height: 100px;
-    @include flex-column-center-center;
-    align-items: stretch;
-    margin-top: 9px;
-    margin-bottom: 30px;
-    //width: 90%;
-    //padding: 10px;
-  //  border: 1px solid red;
-    width: 98%;
-    //padding-right: 109px;
+}
 
-    &:last-child {
-      margin-bottom: 0;
-    }
+.video-tutorials__item {
+  @include flex-column-center-center;
+  height: 100px;
+  align-items: stretch;
+  margin-top: 9px;
+  margin-bottom: 30px;
+  width: 98%;
+
+  &:last-child {
+    margin-bottom: 0;
   }
 }

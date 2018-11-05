@@ -1,4 +1,9 @@
 // main: ../../main.scss
+@mixin update__render-circle() {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-image: url("../assets/updates/Ellipse_2_copy_4.png");
+}
 
 .update {
   @include flex-row;
@@ -23,16 +28,9 @@
 }
 
 .update__number_wrapper {
-  //@include flex-center;
   position: relative;
   text-align: center;
   flex: 0 0 30px;
-}
-
-@mixin update__render-circle()  {
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-image: url("../assets/updates/Ellipse_2_copy_4.png");
 }
 
 .update__number {
@@ -54,11 +52,3 @@
   letter-spacing: 0.6px;
   //----------------------------------
 }
-
-//
-// .update__img {
-//   position: absolute;
-//   top: 50%;
-//   left: 100%;
-//   transform: translate(-50%, -50%);
-// }

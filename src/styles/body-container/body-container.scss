@@ -1,73 +1,63 @@
 // main: ../../main.scss
 //-------------------------------
 
-body {
-  //------------------------------
-  // Uncomment if you want to compare with a picture template.
-  @include fаrame-сontent();
-  // /@include painted();
-  //------------------------------
-  @include flex-center();
 
-  .body-container {
-    @include flex-row();
-    //max-width: 1700px;
-    flex-basis: 1700px;
-  }
 
-  .body-container__wrapper {
-    @include flex-column();
-    flex: 10 3 1550px;
-    padding: 0 30px;
-  }
+.body-container {
+  @include flex-row();
+  //max-width: 1700px;
+  flex-basis: 1700px;
+}
 
-  .body-container__aside {
-    background-color: #eff3f6;
-    flex: 1 1 250px;
-    min-width: 250px;
-  }
+.body-container__wrapper {
+  @include flex-column();
+  flex: 10 3 1550px;
+  padding: 0 30px;
+}
 
-  .body-container__main {
-    @include flex-row-space-between();
-    flex-wrap: wrap;
-  }
+.body-container__aside {
+  background-color: #eff3f6;
+  flex: 1 1 250px;
+  min-width: 250px;
+}
 
-  .body-container__quick-access-section {
-    flex: 1 1 100%;
-  }
+.body-container__main {
+  @include flex-row-space-between();
+  flex-wrap: wrap;
+}
 
-  .body-container__video-tutorials-section {
-    padding-top: 5px;
-    flex: 0 0 50%;
-  }
+.body-container__quick-access-section {
+  flex: 1 1 100%;
+}
 
-  .body-container__recent-updates-section {
+.body-container__video-tutorials-section {
   padding-top: 5px;
-    //padding-left: 20px;
-    flex: 0 0 48%;
-  }
+  flex: 0 0 50%;
+}
 
-  .body-container__header {
-    height: 72px;
-    padding-top: 20px;
-  }
+.body-container__recent-updates-section {
+  padding-top: 5px;
+  //padding-left: 20px;
+  flex: 0 0 48%;
+}
 
-  .body-container__header-wrapper {
-    @include flex-row-space-between();
-    align-items: baseline;
-  }
+.body-container__header {
+  height: 72px;
+  padding-top: 20px;
+}
+
+.body-container__header-wrapper {
+  @include flex-row-space-between();
+  align-items: baseline;
 }
 //--------------------------------
-
-body {
-  .body-container {
-    .content-container {}
-  }
-
-  .body-container__aside {}
-
-  .body-container__main {}
-
-  .body-container__header {}
+.body-container {
+  .content-container {}
 }
+
+.body-container__aside {}
+
+.body-container__main {}
+
+.body-container__header {}
 //--------------------------------

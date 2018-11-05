@@ -3,7 +3,7 @@
   src: url("./fonts/Berlina X-Bold.ttf");
 }
 
-body {
+.body {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -14,57 +14,57 @@ body {
   align-items: center;
 }
 
-body .body-container {
+.body .body-container {
   max-width: 1440px;
   height: 830px;
 }
 
-body .body-container {
+.body-container {
   display: flex;
   flex-direction: row;
   flex-basis: 1700px;
 }
 
-body .body-container__wrapper {
+.body-container__wrapper {
   display: flex;
   flex-direction: column;
   flex: 10 3 1550px;
   padding: 0 30px;
 }
 
-body .body-container__aside {
+.body-container__aside {
   background-color: #eff3f6;
   flex: 1 1 250px;
   min-width: 250px;
 }
 
-body .body-container__main {
+.body-container__main {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   flex-wrap: wrap;
 }
 
-body .body-container__quick-access-section {
+.body-container__quick-access-section {
   flex: 1 1 100%;
 }
 
-body .body-container__video-tutorials-section {
+.body-container__video-tutorials-section {
   padding-top: 5px;
   flex: 0 0 50%;
 }
 
-body .body-container__recent-updates-section {
+.body-container__recent-updates-section {
   padding-top: 5px;
   flex: 0 0 48%;
 }
 
-body .body-container__header {
+.body-container__header {
   height: 72px;
   padding-top: 20px;
 }
 
-body .body-container__header-wrapper {
+.body-container__header-wrapper {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -90,7 +90,7 @@ body .body-container__header-wrapper {
   color: green;
 }
 
-.recent-updates .recent-updates__list {
+.recent-updates__list {
   list-style: none;
   padding: 0;
   margin: 0;
@@ -100,30 +100,110 @@ body .body-container__header-wrapper {
   height: 100%;
 }
 
-.video-tutorials .video-tutorials__list {
+.video-tutorials__list {
   list-style: none;
   padding: 0;
   margin: 0;
   height: 100%;
 }
 
-.video-tutorials .video-tutorials__item {
-  height: 100px;
+.video-tutorials__item {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  height: 100px;
   align-items: stretch;
   margin-top: 9px;
   margin-bottom: 30px;
   width: 98%;
 }
 
-.video-tutorials .video-tutorials__item:last-child {
+.video-tutorials__item:last-child {
   margin-bottom: 0;
 }
 
-.purchase-block .purchase-block__button {
+.video-tutorial-element {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.video-tutorial-element__logo-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex: 1 1 105px;
+}
+
+.video-tutorial-element__information {
+  align-self: center;
+  flex: 10 10 400px;
+}
+
+.video-tutorial-element__button-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex: 1 1 200px;
+}
+
+.video-tutorial-element__button {
+  cursor: pointer;
+  outline: none;
+  background: none;
+  border: none;
+  width: 150px;
+  height: 50px;
+  border-radius: 3px;
+  background-color: #606060;
+  color: #eff3f6;
+  font-family: Arimo;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 48px;
+  text-transform: uppercase;
+  letter-spacing: 1.95px;
+}
+
+.video-tutorial-element__logo {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 64px;
+  height: 64px;
+  background-color: #eff3f6;
+  border-radius: 50%;
+}
+
+.video-tutorial-element__title {
+  font-weight: normal;
+  font-style: normal;
+  margin: 0;
+  padding: 0;
+  color: #222222;
+  font-family: Arimo;
+  font-size: 18px;
+  font-weight: 400;
+  letter-spacing: 0.45px;
+}
+
+.video-tutorial-element__desctiption {
+  font-weight: normal;
+  font-style: normal;
+  margin: 0;
+  padding: 0;
+  color: #919ba2;
+  font-family: Arimo;
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 0.35px;
+}
+
+.purchase-block__button {
   cursor: pointer;
   outline: none;
   background: none;
@@ -146,7 +226,7 @@ body .body-container__header-wrapper {
   width: 60%;
 }
 
-.search-bar .search-bar__input {
+.search-bar__input {
   border: none;
   background-image: none;
   background-color: transparent;
@@ -161,11 +241,11 @@ body .body-container__header-wrapper {
   letter-spacing: 0.4px;
 }
 
-.search-bar .search-bar__input:focus {
+.search-bar__input:focus {
   outline: none;
 }
 
-.search-bar .search-bar__icon {
+.search-bar__icon {
   width: 16px;
   height: 16px;
   margin-right: 10px;
@@ -191,11 +271,11 @@ body .body-container__header-wrapper {
 }
 
 .quick-access__item:last-child {
-  margin-right: 0px;
+  margin-right: 0;
 }
 
 .quick-access__item:first-child {
-  margin-left: 0px;
+  margin-left: 0;
 }
 
 .device-preview {
@@ -444,51 +524,6 @@ body .body-container__header-wrapper {
   background-repeat: no-repeat;
 }
 
-.sidebar-footer {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-}
-
-.sidebar-footer__name {
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  color: #222222;
-  font-family: Arimo;
-  font-size: 14px;
-  font-weight: 400;
-  letter-spacing: 0.35px;
-}
-
-.sidebar-footer__name:after {
-  content: "\A";
-  width: 26px;
-  height: 26px;
-  display: inline-block;
-  background-image: url("../assets/sidebar/arrows-16px-3_small-down.png");
-  background-position: center center;
-  background-repeat: no-repeat;
-}
-
-.sidebar-footer__img {
-  width: 39px;
-  height: 39px;
-}
-
-.sidebar-footer__img-wrapper {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  flex: 1 1 20%;
-}
-
-.sidebar-footer__name-wrapper {
-  padding-left: 15px;
-  flex: 4 4 80%;
-}
-
 .nav-section__link_selected:before, .nav-section__link:hover:before {
   content: "\A";
   width: 8px;
@@ -576,91 +611,51 @@ body .body-container__header-wrapper {
   background-image: url("../assets/sidebar/icons/design-16px-2_layout-25.png");
 }
 
-.sidebar-nav__section {
-  margin-bottom: 25px;
-}
-
-.video-tutorial-element {
+.sidebar-footer {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
-}
-
-.video-tutorial-element .video-tutorial-element {
-  width: 38px;
-  height: 38px;
-}
-
-.video-tutorial-element .video-tutorial-element__logo-container {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
   align-items: center;
-  flex: 1 1 105px;
 }
 
-.video-tutorial-element .video-tutorial-element__information {
-  align-self: center;
-  flex: 10 10 400px;
-}
-
-.video-tutorial-element .video-tutorial-element__button-wrapper {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  flex: 1 1 200px;
-}
-
-.video-tutorial-element .video-tutorial-element__button {
+.sidebar-footer__name {
   cursor: pointer;
-  outline: none;
-  background: none;
-  border: none;
-  width: 150px;
-  height: 50px;
-  border-radius: 3px;
-  background-color: #606060;
-  color: #eff3f6;
-  font-family: Arimo;
-  font-size: 13px;
-  font-weight: 700;
-  line-height: 48px;
-  text-transform: uppercase;
-  letter-spacing: 1.95px;
-}
-
-.video-tutorial-element .video-tutorial-element__logo {
   display: flex;
-  flex-direction: row;
-  justify-content: center;
   align-items: center;
-  width: 64px;
-  height: 64px;
-  background-color: #eff3f6;
-  border-radius: 50%;
-}
-
-.video-tutorial-element .video-tutorial-element__title {
-  font-weight: normal;
-  font-style: normal;
-  margin: 0;
-  padding: 0;
   color: #222222;
-  font-family: Arimo;
-  font-size: 18px;
-  font-weight: 400;
-  letter-spacing: 0.45px;
-}
-
-.video-tutorial-element .video-tutorial-element__desctiption {
-  font-weight: normal;
-  font-style: normal;
-  margin: 0;
-  padding: 0;
-  color: #919ba2;
   font-family: Arimo;
   font-size: 14px;
   font-weight: 400;
   letter-spacing: 0.35px;
+}
+
+.sidebar-footer__name:after {
+  content: "\A";
+  width: 26px;
+  height: 26px;
+  display: inline-block;
+  background-image: url("../assets/sidebar/arrows-16px-3_small-down.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.sidebar-footer__img {
+  width: 39px;
+  height: 39px;
+}
+
+.sidebar-footer__img-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex: 1 1 20%;
+}
+
+.sidebar-footer__name-wrapper {
+  padding-left: 15px;
+  flex: 4 4 80%;
+}
+
+.sidebar-nav__section {
+  margin-bottom: 25px;
 }

@@ -1,21 +1,21 @@
 // main: ../../main.scss
 
-.purchase-block {
-  .purchase-block__button {
-    @include reset_button_styles();
-    width: 150px;
-    height: 40px;
-    border-radius: 3px;
-    text-align: center;
-    //----------------------
-    color: #eff3f6;
-    font-family: Arimo;
-    font-size: 13px;
-    font-weight: 700;
-    //line-height: 48px;
-    text-transform: uppercase;
-    letter-spacing: 1.95px;
-    background-image: linear-gradient(to left, #ff512f 0%, #dd2476 100%);
-    //----------------------
-  }
+.purchase-block {}
+
+.purchase-block__button {
+  @include reset_button_styles();
+  width: 150px;
+  height: 40px;
+  border-radius: 3px;
+  text-align: center;
+  //----------------------
+  color: #eff3f6;
+  font-family: Arimo;
+  font-size: 13px;
+  font-weight: 700;
+  //line-height: 48px;
+  text-transform: uppercase;
+  letter-spacing: 1.95px;
+  background-image: linear-gradient(to left, #ff512f 0%, #dd2476 100%);
+  //----------------------
 }

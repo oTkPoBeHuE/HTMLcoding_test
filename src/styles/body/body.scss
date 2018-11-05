@@ -1,0 +1,10 @@
+// main: ../../main.scss
+
+.body {
+  //------------------------------
+  // Uncomment if you want to compare with a picture template.
+  @include fаrame-сontent();
+  // /@include painted();
+  //------------------------------
+  @include flex-center();
+}

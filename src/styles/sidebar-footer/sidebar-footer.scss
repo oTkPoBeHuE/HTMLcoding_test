@@ -11,15 +11,14 @@
 
 .sidebar-footer {
   @include flex-row;
-  //justify-content: space-around;
   align-items: center;
 }
 
 .sidebar-footer__name {
-  @include  cursor_pointer;
+  @include cursor_pointer;
   display: flex;
   align-items: center;
-  //align-items: center;
+
   &:after {
     @include sidebar-footer__render-arrow;
   }

@@ -1,7 +1,7 @@
 // main: ../../main.scss
 
-.recent-updates {
-  .recent-updates__list {
-    @include reset_unordered_lists_styles;
-  }
+.recent-updates {}
+
+.recent-updates__list {
+  @include reset_unordered_lists_styles;
 }
