@@ -50,13 +50,16 @@
 }
 
 .body-container__video-tutorials-section {
-  padding-top: 5px;
+  padding-top: 8px;
   flex: 0 0 562px;
 }
 
 .body-container__recent-updates-section {
   padding-top: 5px;
   flex: 0 0 550px;
+}
+
+.body-container__recent-updates-section .content-area__content {
   box-shadow: 0 2px 5px rgba(106, 104, 104, 0.15);
   border-radius: 3px;
   background-color: #ffffff;
